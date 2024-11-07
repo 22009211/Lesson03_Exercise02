@@ -1,163 +1,77 @@
 import React, {useState} from 'react';
-import { StatusBar } from 'expo-status-bar';
-import {StyleSheet, Text, View, Button, Alert} from 'react-native';
-import RNPickerSelect from 'react-native-picker-select';
-
-export default function App() {
-  const [ans1, setAns1] = useState('elephant')
-  const [ans2, setAns2] = useState('leopard')
-  const [ans3, setAns3] = useState('kingfisher')
-    const [ans4, setAns4] = useState('owl')
-    const [ans5, setAns5] = useState('bee')
-  return (
-    <View style={styles.container}>
-      <Text>GUESS THE ANIMALS size={50}</Text>
-
-      <Image source={require('./img/elephant.jpg')}
-      <Text>What animal is this?</Text>
-      <RNPickerSelect
-          onValueChange={(value) => setAns1(value)}
-          items={
-            [
-              { label: 'Bee', value: 'bee' },
-              { label: 'Crocodile', value: 'crocodile' },
-              { label: 'Deer', value: 'deer' },
-              { label: 'Elephant', value: 'elephant' },
-              { label: 'Giraffe', value: 'giraffe' },
-              { label: 'Hummingbird', value: 'hummingbird' },
-              { label: 'Kingfisher', value: 'kingfisher' },
-              { label: 'Leopard', value: 'leopard' },
-              { label: 'Owl', value: 'owl' },
-              { label: 'Peacock', value: 'peacock' },
-              { label: 'Penguin', value: 'penguin' },
-              { label: 'Rabbit', value: 'rabbit' },
-              { label: 'Squirrel', value: 'squirrel' },
-              { label: 'Tiger', value: 'tiger' },
-              { label: 'Turtle', value: 'turtle' },
-              { label: 'Zebra', value: 'zebra' },
-            ]
-          }
-      />
-
-      <Image source={require('./img/leopard.jpg')}
-      <Text>What animal is this?</Text>
-      <RNPickerSelect
-          onValueChange={(value) => setAns2(value)}
-          items={
-            [
-              { label: 'Bee', value: 'bee' },
-              { label: 'Crocodile', value: 'crocodile' },
-              { label: 'Deer', value: 'deer' },
-              { label: 'Elephant', value: 'elephant' },
-              { label: 'Giraffe', value: 'giraffe' },
-              { label: 'Hummingbird', value: 'hummingbird' },
-              { label: 'Kingfisher', value: 'kingfisher' },
-              { label: 'Leopard', value: 'leopard' },
-              { label: 'Owl', value: 'owl' },
-              { label: 'Peacock', value: 'peacock' },
-              { label: 'Penguin', value: 'penguin' },
-              { label: 'Rabbit', value: 'rabbit' },
-              { label: 'Squirrel', value: 'squirrel' },
-              { label: 'Tiger', value: 'tiger' },
-              { label: 'Turtle', value: 'turtle' },
-              { label: 'Zebra', value: 'zebra' },
-            ]
-          }
-      />
-
-      <Image source={require('./img/kingfisher.jpg')}
-      <Text>What animal is this?</Text>
-      <RNPickerSelect
-          onValueChange={(value) => setAns3(value)}
-          items={
-            [
-              { label: 'Bee', value: 'bee' },
-              { label: 'Crocodile', value: 'crocodile' },
-              { label: 'Deer', value: 'deer' },
-              { label: 'Elephant', value: 'elephant' },
-              { label: 'Giraffe', value: 'giraffe' },
-              { label: 'Hummingbird', value: 'hummingbird' },
-              { label: 'Kingfisher', value: 'kingfisher' },
-              { label: 'Leopard', value: 'leopard' },
-              { label: 'Owl', value: 'owl' },
-              { label: 'Peacock', value: 'peacock' },
-              { label: 'Penguin', value: 'penguin' },
-              { label: 'Rabbit', value: 'rabbit' },
-              { label: 'Squirrel', value: 'squirrel' },
-              { label: 'Tiger', value: 'tiger' },
-              { label: 'Turtle', value: 'turtle' },
-              { label: 'Zebra', value: 'zebra' },
-            ]
-          }
-      />
-
-      <Image source={require('./img/owl.jpg')}
-      <Text>What animal is this?</Text>
-      <RNPickerSelect
-          onValueChange={(value) => setAns4(value)}
-          items={
-              [
-                  { label: 'Bee', value: 'bee' },
-                  { label: 'Crocodile', value: 'crocodile' },
-                  { label: 'Deer', value: 'deer' },
-                  { label: 'Elephant', value: 'elephant' },
-                  { label: 'Giraffe', value: 'giraffe' },
-                  { label: 'Hummingbird', value: 'hummingbird' },
-                  { label: 'Kingfisher', value: 'kingfisher' },
-                  { label: 'Leopard', value: 'leopard' },
-                  { label: 'Owl', value: 'owl' },
-                  { label: 'Peacock', value: 'peacock' },
-                  { label: 'Penguin', value: 'penguin' },
-                  { label: 'Rabbit', value: 'rabbit' },
-                  { label: 'Squirrel', value: 'squirrel' },
-                  { label: 'Tiger', value: 'tiger' },
-                  { label: 'Turtle', value: 'turtle' },
-                  { label: 'Zebra', value: 'zebra' },
-              ]
-          }
-      />
-
-      <Image source={require('./img/bee.jpg')}
-      <Text>What animal is this?</Text>
-      <RNPickerSelect
-          onValueChange={(value) => setAns5(value)}
-          items={
-              [
-                  { label: 'Bee', value: 'bee' },
-                  { label: 'Crocodile', value: 'crocodile' },
-                  { label: 'Deer', value: 'deer' },
-                  { label: 'Elephant', value: 'elephant' },
-                  { label: 'Giraffe', value: 'giraffe' },
-                  { label: 'Hummingbird', value: 'hummingbird' },
-                  { label: 'Kingfisher', value: 'kingfisher' },
-                  { label: 'Leopard', value: 'leopard' },
-                  { label: 'Owl', value: 'owl' },
-                  { label: 'Peacock', value: 'peacock' },
-                  { label: 'Penguin', value: 'penguin' },
-                  { label: 'Rabbit', value: 'rabbit' },
-                  { label: 'Squirrel', value: 'squirrel' },
-                  { label: 'Tiger', value: 'tiger' },
-                  { label: 'Turtle', value: 'turtle' },
-                  { label: 'Zebra', value: 'zebra' },
-              ]
-          }
-      />
-
-      <Button
-          onPress={() => { Alert.alert("You have answers " + " correct answers!") }}
-          title="Submit Answers"
-      />
-
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+import {StyleSheet, Text, View, Button, Alert, ScrollView, StatusBar, ToastAndroid} from 'react-native';
+import Question from "./Question";
+import Icon from 'react-native-vector-icons/FontAwesome6';
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    title: {
+        margin: 10,
+        textAlign: 'center',
+        backgroundColor: 'white',
+    },
+    quiz: {
+        flexDirection: 'column',
+        backgroundColor: 'white',
+    }
 });
+
+const Quiz = ()=> {
+    const [ans1, setAns1] = useState('0');
+    const [ans2, setAns2] = useState('0');
+    const [ans3, setAns3] = useState('0');
+    const [ans4, setAns4] = useState('0');
+    const [ans5, setAns5] = useState('0');
+    const correct1 = "3";
+    const correct2 = "5";
+    const correct3 = "4";
+    const correct4 = "2";
+    const correct5 = "1";
+
+    return (
+        <ScrollView style={styles.quiz}>
+    <Question pic={require('./img/elephant.jpg')}
+              ans1="Rhino" ans2="Bee" ans3="Elephant" ans4="Owl" ans5="Rabbit"
+              onValueChange={(value) => setAns1(value)}
+    <Question pic={require('./img/zebra.jpg')}
+              ans1="Peacock" ans2="Kingfisher" ans3="Crocodile" ans4="Deer" ans5="Zebra"
+              onValueChange={(value) => setAns2(value)}
+    <Question pic={require('./img/penguin.jpg')}
+              ans1="Hummingbird" ans2="Bee" ans3="Elephant" ans4="Penguin" ans5="Giraffe"
+              onValueChange={(value) => setAns3(value)}
+    <Question pic={require('./img/tiger.jpg')}
+              ans1="Elephant" ans2="Tiger" ans3="Leopard" ans4="Deer" ans5="Rabbit"
+              onValueChange={(value) => setAns4(value)}
+    <Question pic={require('./img/owl.jpg')}
+              ans1="Owl" ans2="Penguin" ans3="Squirrel" ans4="Turtle" ans5="Zebra"
+              onValueChange={(value) => setAns5(value)}
+
+      <Button
+          title = "Submit Answers"
+          onPress={
+              () =>{
+          let score = 0;
+          if(ans1==correct1){
+                score++
+    }
+          if(ans2==correct2){
+                score++
+    }
+          if(ans3==correct3){
+                score++
+    }
+          if(ans4==correct4){
+                score++
+    }
+          if(ans5==correct5){
+                score++
+    }
+          Alert.alert("You have answers " + score + " correct answers!")
+      }
+      }
+      >
+        </Button>
+    </ScrollView>
+  );
+};
+
+export default Quiz;
