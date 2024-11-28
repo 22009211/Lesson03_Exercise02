@@ -5,7 +5,7 @@ import RNPickerSelect from "react-native-picker-select";
 const Question = ({pic, ans1, ans2, ans3, ans4, ans5, onValueChange})=> {
     return (
         <View>
-            <Image source={pic} style={width:500, height:300}}/>
+            <Image source={pic} style={{width:500, height:300}}/>
             <Text>What animal is this?</Text>
             <RNPickerSelect
                 onValueChange={onValueChange}

@@ -31,19 +31,19 @@ const Quiz = ()=> {
         <ScrollView style={styles.quiz}>
     <Question pic={require('./img/elephant.jpg')}
               ans1="Rhino" ans2="Bee" ans3="Elephant" ans4="Owl" ans5="Rabbit"
-              onValueChange={(value) => setAns1(value)}
+              onValueChange={(value) => setAns1(value)}/>
     <Question pic={require('./img/zebra.jpg')}
               ans1="Peacock" ans2="Kingfisher" ans3="Crocodile" ans4="Deer" ans5="Zebra"
-              onValueChange={(value) => setAns2(value)}
+              onValueChange={(value) => setAns2(value)}/>
     <Question pic={require('./img/penguin.jpg')}
               ans1="Hummingbird" ans2="Bee" ans3="Elephant" ans4="Penguin" ans5="Giraffe"
-              onValueChange={(value) => setAns3(value)}
+              onValueChange={(value) => setAns3(value)}/>
     <Question pic={require('./img/tiger.jpg')}
               ans1="Elephant" ans2="Tiger" ans3="Leopard" ans4="Deer" ans5="Rabbit"
-              onValueChange={(value) => setAns4(value)}
+              onValueChange={(value) => setAns4(value)}/>
     <Question pic={require('./img/owl.jpg')}
               ans1="Owl" ans2="Penguin" ans3="Squirrel" ans4="Turtle" ans5="Zebra"
-              onValueChange={(value) => setAns5(value)}
+              onValueChange={(value) => setAns5(value)}/>
 
       <Button
           title = "Submit Answers"
@@ -69,7 +69,7 @@ const Quiz = ()=> {
       }
       }
       >
-        </Button>
+      </Button>
     </ScrollView>
   );
 };
